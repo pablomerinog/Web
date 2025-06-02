@@ -1,0 +1,110 @@
+:root {
+        --primary-color: #0078d7; /* Azul moderno */
+        --secondary-color: #f4f4f4; /* Gris claro */
+        --text-color: #333333; /* Gris oscuro */
+        --accent-color: #ffb900; /* Amarillo dorado */
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--text-color);
+      }
+
+      header {
+        background: var(--primary-color);
+        color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: var(--accent-color);
+        color: white;
+      }
+
+      #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      #apartments img {
+       /* border-radius: 12px;*/
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .apartment-card :hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      button {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--accent-color)
+        );
+        color: white;
+        font-weight: bold;
+        padding: 12px 24px;
+        border-radius: 8px;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        background: var(--accent-color);
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .fade-out {
+        transition: opacity 0.5s ease-out;
+        opacity: 0;
+      }
+
+      .bg-cover {
+        transition: opacity 0.2s ease-out;
+        position: relative;
+        z-index: -1;
+      }
+
+      .apartment-card {
+        transition: transform 0.3s ease-out;
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .apartment-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
