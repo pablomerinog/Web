@@ -4,6 +4,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>ToledoAloja - Apartamentos Turísticos en Toledo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
@@ -12,10 +13,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css" />
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
   </head>
+  <a
+    href="https://wa.me/34722131298"
+    class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+     <i class="fab fa-whatsapp text-2xl w-6 h-6 leading-none align-middle ml-0.5"></i>
+  </a>
   <body class="bg-gray-100">
     <header class="bg-white shadow-md">
       <div
@@ -34,7 +44,10 @@
           <a class="text-gray-600 hover:text-gray-800" href="#apartments">
             Apartamentos
           </a>
-          <a class="text-gray-600 hover:text-gray-800" href="https://app.thebookingbutton.com/properties/ToledoAlojadirect">
+          <a
+            class="text-gray-600 hover:text-gray-800"
+            href="https://app.thebookingbutton.com/properties/ToledoAlojadirect"
+          >
             Reservar
           </a>
           <a class="text-gray-600 hover:text-gray-800" href="#about">
@@ -49,7 +62,6 @@
           <a class="text-gray-600 hover:text-gray-800" href="#contact">
             Contacto
           </a>
-          
         </nav>
       </div>
     </header>
@@ -92,7 +104,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-white shadow-md rounded-lg overflow-hidden" >
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
             <img
               alt="Imagen del apartamento Solarejo, un apartamento turístico en Toledo, España"
               class="w-full h-48 object-cover"
@@ -123,7 +135,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="bg-white shadow-md rounded-full overflow-hidden">
             <img
               alt="Imagen del apartamento T24, un apartamento turístico en Toledo, España"
               class="w-full h-48 object-cover"
@@ -149,13 +161,13 @@
         <div class="max-w-4xl mx-auto text-center">
           <p class="text-gray-700">
             ToledoAloja es una empresa dedicada al alquiler vacacional de
-            apartamentos turísticos en la hermosa ciudad de Toledo.
-            Fundada con el objetivo de ofrecer a nuestros huéspedes una
-            experiencia única y memorable, nuestros apartamentos están diseñados
-            para proporcionar el máximo confort y conveniencia. Cada uno de
-            nuestros apartamentos está ubicado en el corazón de Toledo,
-            permitiendo a nuestros huéspedes explorar fácilmente la rica
-            historia y cultura de la ciudad.
+            apartamentos turísticos en la hermosa ciudad de Toledo. Fundada con
+            el objetivo de ofrecer a nuestros huéspedes una experiencia única y
+            memorable, nuestros apartamentos están diseñados para proporcionar
+            el máximo confort y conveniencia. Cada uno de nuestros apartamentos
+            está ubicado en el corazón de Toledo, permitiendo a nuestros
+            huéspedes explorar fácilmente la rica historia y cultura de la
+            ciudad.
           </p>
         </div>
       </div>
@@ -165,14 +177,15 @@
         <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">
           Contacto
         </h2>
-         <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-4xl mx-auto text-center">
           <p class="text-gray-700">
-            Si tienes alguna duda o quieres hacer un reserva ponte en contacto con nosotros.
+            Si tienes alguna duda o quieres hacer un reserva ponte en contacto
+            con nosotros.
           </p>
         </div>
         <div class="flex flex-col md:flex-row md:space-x-8">
           <div class="md:w-1/2">
-            <form class="bg-white shadow-md rounded-lg p-6 ">
+            <form class="bg-white shadow-md rounded-lg p-6">
               <div class="mb-4">
                 <label class="block text-gray-700" for="name"> Nombre </label>
                 <input
@@ -245,5 +258,13 @@
         <p>© 2025 ToledoAloja. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <button
+      id="scrollToTop"
+      class="hidden fixed bottom-24 right-8 bg-gray-800 text-white p-3 rounded-full shadow-lg z-50 hover:bg-gray-700 transition-opacity duration-300"
+      aria-label="Volver arriba"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </body>
+    <script src="scripts/scriptBtn.js"></script>
 </html>
